@@ -1,0 +1,66 @@
+<Html>
+    <head>
+        <title>Registered Students</title>
+        <script type="text/javascript" src="\script.js"></script>
+    </head>
+    <style>
+        body{
+            font-family: Verdana, Geneva, Tahoma, sans-serif;
+        }
+
+        h2{
+            text-align: center;
+            margin: 30px 0;
+        }
+
+        table{
+            margin: auto;
+            border-collapse: collapse;
+            width: 80%;
+        }
+
+        th, td{
+            border: 1px solid black;
+            padding: 10px;
+            text-align: center;
+        }
+
+        th{
+            background-color: rgb(54, 135, 138);
+            color: black;
+        }
+
+        tbody tr{
+            background-color: cadetblue;
+            font-weight: 500;
+
+        }
+
+        tbody tr:hover{
+            background-color: rgb(80, 136, 138);
+        }
+        body{
+            background-color: beige;
+        }
+    </style>
+    <body>
+        <h2>Available Course List</h2>
+        <table >
+            <tr>
+                <th width="150">CourseId</th>
+                <th width="150">CourseName</th>
+                <th width="150">DurationMonth</th>
+                <th width="150">Trainer</th>
+            </tr>
+            <tbody id="CourseTable"></tbody>
+            
+        </table>
+
+        <script type="text/javascript">
+            window.onload=function(){
+                showCourse();
+            };
+
+        </script>
+    </body>
+</Html>

@@ -1,0 +1,90 @@
+<Html>
+    <head>
+        <title>Register for a Course </title>
+    </head>
+    <body>
+        <div>
+        <form action="http://localhost:8080/Courses/Register" method="post">
+            <h1>Register Course</h1>
+            <label for="course"> Select Your Course : </label>
+            <select id="course" name="CourseName">
+            <option>select</option>
+            <option>Java</option>
+            <option>Python</option>
+            <option>Iot</option>
+            <option>C</option>  
+            <option>C++</option>          
+            </select><br>
+            <label for="email">Enter Your emailId : </label>
+            <input type="email" name="email"><br>
+
+            <label>Enter Your Name : </label>
+            <input type="name" name="name"><br>
+
+            <button>Submit</button>
+
+        </form>
+        </div>
+
+        <style>
+            h1{
+                font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+                font-weight: bold;
+            }
+            body{
+                background-color: linen;
+
+            }
+            form{
+                display: grid;
+                text-align: center;
+                margin-top: 40px;
+                background-color: rgb(74, 151, 154);
+                padding: 50px;
+                margin-left: 400px;
+                width: 400px;
+                box-shadow: 0 8px 20px rgba(0, 0, 0, 0.2);
+                border-radius: 10px;
+            }
+        
+            label{
+                flex-direction: column;
+                font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+                font-weight: 500;
+                margin-bottom: 5px;
+                display: flex;
+            }
+            input{
+                box-shadow: navajowhite;
+                margin-bottom: 10px;
+                padding: 10px;
+                background-color:rgb(221, 230, 230) ;
+                color: black;
+                text-align: center;
+            }
+            select{
+                margin-bottom: 10px;
+                flex-direction: row;
+                padding: 10px;
+                background-color: rgb(221, 230, 230);
+                color: black;
+                text-align: center;
+            }
+            button{
+                padding: 10px;
+                background-color:rgb(221, 230, 230) ;
+                color: black;
+                font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+                font-weight: bold;
+                border-radius: 10px;
+                margin-top: 10px;
+            }
+            button:hover{
+                background-color: darkolivegreen;
+                box-shadow: inset;
+            }
+
+        </style>
+    </body>
+</Html>
+ 
