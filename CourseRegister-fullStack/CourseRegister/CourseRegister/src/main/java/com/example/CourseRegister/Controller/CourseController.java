@@ -9,7 +9,7 @@ import org.springframework.web.bind.annotation.*;
 import java.util.List;
 @CrossOrigin("*")
 @RestController
-@CrossOrigin(origins ="http://127.0.0.1:5500/")
+@CrossOrigin(origins ="*")
 public class CourseController {
     @Autowired
     CourseService service;
@@ -34,4 +34,5 @@ public class CourseController {
 
 
 }
+
 
