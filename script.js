@@ -22,7 +22,7 @@ function showCourse(){
 }
 
 function showStudents(){
-        fetch("http://localhost:8080/Courses/RegisteredStudents").
+        fetch("/Courses/RegisteredStudents").
     then(response=>response.json()).
     then(course=> {
         const table=document.getElementById("RegisteredTable");
@@ -43,4 +43,5 @@ function showStudents(){
 
 
 }
+
 
