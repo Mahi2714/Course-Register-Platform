@@ -13,16 +13,16 @@ import java.util.List;
 public class CourseController {
     @Autowired
     CourseService service;
-    @GetMapping("Courses")
+    @GetMapping("/Courses")
     public List<Course> getCourse(){
        return  service.getCourse();
     }
-    @GetMapping("Courses/RegisteredStudents")
+    @GetMapping("/Courses/RegisteredStudents")
     public List<CourseRegister> getRegisteredStud(){
         return service.getRegisteredStud();
     }
 
-    @PostMapping("Courses/Register")
+    @PostMapping("/Courses/Register")
     public String register(@RequestParam("CourseName") String CourseName,
                            @RequestParam("email") String email,
                            @RequestParam("name") String name){
@@ -34,5 +34,6 @@ public class CourseController {
 
 
 }
+
 
 
