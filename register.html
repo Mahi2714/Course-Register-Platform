@@ -4,7 +4,8 @@
     </head>
     <body>
         <div>
-        <form action="http://localhost:8080/Courses/Register" method="post">
+        
+        <form th:action="@{Courses/Register}" method="post">
             <h1>Register Course</h1>
             <label for="course"> Select Your Course : </label>
             <select id="course" name="CourseName">
@@ -87,4 +88,5 @@
         </style>
     </body>
 </Html>
+
  
