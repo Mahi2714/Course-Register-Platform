@@ -1,5 +1,5 @@
 function showCourse(){
-    fetch("/Courses" method="GET").
+    fetch("/Courses").
     then(response=>response.json()).
     then(course=> {
         const table=document.getElementById("CourseTable");
@@ -22,7 +22,7 @@ function showCourse(){
 }
 
 function showStudents(){
-        fetch("/Courses/RegisteredStudents" method="GET").
+        fetch("/Courses/RegisteredStudents").
     then(response=>response.json()).
     then(course=> {
         const table=document.getElementById("RegisteredTable");
@@ -43,6 +43,7 @@ function showStudents(){
 
 
 }
+
 
 
 
